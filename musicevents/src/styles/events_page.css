@@ -1,0 +1,93 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100em;
+    margin: 2em auto 1em auto;
+    gap: 2em;
+}
+
+.main-container .user-container{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.main-container .user-container img{
+    border-radius: 50%;
+    border: 3px solid var(--mainColor);
+    width: 4.5em;
+}
+
+.main-container .user-container .username{
+    color: var(--formColor);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.main-container .title-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    margin-top: 1em;
+}
+
+.main-container .title-btn .events-title{
+    color: var(--formColor);
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.main-container .title-btn .create-event{
+    text-decoration: none;
+    color: var(--formColor);
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+    width: 1.5em;
+    height: 1.5em;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    transition: .2s;
+}
+
+.main-container .title-btn .create-event:hover{
+    transform: translateY(-0.1em);
+    box-shadow: 0 0 0.6em var(--mainColor);
+}
+
+.main-container .events-container{
+    background-color: #0D1117;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0.5em 0.4em 0.6em #020202;
+}
+
+.main-container .events-container .all-events-title{
+    display: block;
+    width: 100%;
+    background-color: #161B22;
+    color: var(--formColor);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.5em 0.8em;
+}
+
+.main-container .events-container .all-events{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2em;
+    padding: 0.5em 0 1.5em 0;
+}
+
+.main-container .events-container .no-events{
+    color: #3c4a5e;
+    font-size: 3em;
+    text-align: center;
+    padding: 0.5em 0 1em 0;
+}

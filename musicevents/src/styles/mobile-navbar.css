@@ -1,0 +1,64 @@
+.mobile-nv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: #22150e;
+    position: absolute;
+    top: 9em;
+    left: 50%;
+    padding: 1em 0;
+    width: 22em;
+    border-radius: 0.3em;
+    z-index: 1;
+    box-shadow: 0 0 0.9em #666666;
+    animation: popup .4s linear;
+    transform: translateX(-50%);
+}
+
+@keyframes popup {
+    0%{
+        opacity: 0;
+        top: 11em;
+    }
+
+    100%{
+        opacity: 1;
+        top: 9em;
+    }
+}
+
+.mobile-nv::after{
+    content: '';
+    width: 5em;
+    height: 5em;
+    background-color: #22150e;
+    position: absolute;
+    z-index: -1;
+    top: -1em;
+    left: 15.9em;
+    transform: rotateZ(45deg);
+}
+
+.mobile-nv li{
+    list-style: none;
+}
+
+.mobile-nv li a{
+    display: block;
+    text-decoration: none;
+    color: var(--formColor);
+    font-size: 1.2em;
+    transition: .2s;
+}
+
+.mobile-nv li a:hover{
+    color: var(--mainColor);
+    transform: scale(1.04);
+}
+
+@media only screen and (width >= 800px) {
+    .mobile-nv{
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+.details-container{
+    color: var(--formColor);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 0 2em 1.5em 2em;
+}
+
+.details-container .detail-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.details-container .detail-group .detail-title{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.details-container .options{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.details-container .options a{
+    width: 100%;
+    padding: 0.6em 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 0.23em;
+    border: 2px solid var(--mainColor);
+    font-weight: 700;
+    transition: .2s;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.details-container .options a:first-of-type{
+    background-color: var(--mainColor);
+    color: var(--formColor);
+}
+
+.details-container .options a:first-of-type:hover{
+    transform: translateY(-0.15em);
+    box-shadow: 0 0 0.6em var(--mainColor);
+}
+
+.details-container .options a:nth-child(2){
+    background-color: transparent;
+    color: var(--mainColor);
+}
+
+.details-container .options a:nth-child(2):hover{
+    transform: rotateZ(-1deg);
+}

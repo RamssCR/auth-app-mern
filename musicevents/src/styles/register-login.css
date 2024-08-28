@@ -1,0 +1,105 @@
+:root{
+    --formBorder: #dddddd;
+}
+
+.login-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#00000055, #00000055) ,url(../assets/bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.form-sign{
+    background-color: var(--formColor);
+    width: 28em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 1.5em 2em 1.5em;
+    border-radius: 0.3em;
+    gap: 1em;
+    border: 1px solid var(--formBorder);
+    box-shadow: 0 0 0.6em #aaaaaa;
+}
+
+.form-sign .form-title{
+    font-size: 2em;
+    color: var(--mainColor);
+}
+
+.form-sign .form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    width: 90%;
+}
+
+.form-sign .form-inputs .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.form-sign .form-inputs .input-group label{
+    font-weight: 500;
+}
+
+.form-sign .form-inputs .input-group input[type="text"],
+.form-sign .form-inputs .input-group input[type="password"]{
+    border: 1px solid var(--borderColor);
+    border-radius: 0.23em;
+    font-size: 1em;
+    padding: 0.5em 0.7em;
+    outline-color: var(--mainColor);
+}
+
+.form-sign .form-inputs input[type="submit"]{
+    border: none;
+    border-radius: 0.4em;
+    color: var(--formColor);
+    background-color: var(--mainColor);
+    padding: 0.6em 0;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.copyright{
+    color: var(--borderColor);
+}
+
+.form-sign .form-inputs input[type="submit"]:hover{
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.error{
+    color: var(--errorCharColor);
+    display: block;
+    background-color: var(--errorBgColor);
+    padding: 0.5em 0.8em;
+    font-size: 0.8em;
+    font-weight: 800;
+    border-radius: 0.6em;
+    width: 90%;
+    text-align: center;
+}
+
+@media only screen and (width <= 800px) {
+    form {
+        width: 23em;
+    }
+}

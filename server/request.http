@@ -1,0 +1,56 @@
+### REGISTER on the website
+POST http://localhost:2000/register
+Content-Type: application/json
+
+{
+    "username": "romina_p.05",
+    "email": "romina.perez@gmail.com",
+    "password": "20304050"
+}
+
+### LOGIN on the website
+POST http://localhost:2000/login
+Content-Type: application/json
+
+{
+    "email": "ramsesgpm@gmail.com",
+    "password": "121314Aa@"
+}
+
+### LOGOUT from the website
+POST http://localhost:2000/logout
+
+### GET logged-in user data (token already authenticated)
+GET http://localhost:2000/profile
+
+### EVENTS
+
+### GET all users tasks (token already authenticated)
+GET http://localhost:2000/events
+
+### GET an user task by ID (token already authenticated)
+GET http://localhost:2000/events/66bf6644127fcd548df77dfb
+
+### POST an user task (token already authenticated)
+POST http://localhost:2000/events
+Content-Type: application/json
+
+{  
+    "title": "Boda Barroca",
+    "description": "Evento sacramental del matrimonio",
+    "place": "La Unión",
+    "hour": "11:30AM",
+    "date": "25/12/2024",
+    "user": "66bcd800747bd45f6c5530c7"
+}
+
+### UPDATE an existing event
+PATCH http://localhost:2000/events/66a92219a0cd0bbb103570e8
+Content-Type: application/json
+
+{
+    "hour": "6:00PM"
+}
+
+### DELETE an existing event
+DELETE http://localhost:2000/events/66a92219a0cd0bbb103570e8

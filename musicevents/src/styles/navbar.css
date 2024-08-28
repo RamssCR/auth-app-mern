@@ -1,0 +1,67 @@
+:root{
+    --navbarCharColor: #ebfaf7;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.3em 3em;
+    background-color: var(--secondaryColor);
+    border-bottom: 3px solid var(--mainColor);
+    box-shadow: 0 0.4em 0.6em #444444;
+}
+
+nav .brand{
+    color: var(--navbarCharColor);
+    font-size: 2em;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 6em;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--navbarCharColor);
+    font-weight: 500;
+    transition: .2s;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover{
+    transform: scale(1.04);
+    color: var(--mainColor);
+}
+
+nav .mobile-navbar{
+    width: 3em;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (width <= 800px) {
+    nav{
+        padding: 1.3em 1.6em;
+    }
+
+    nav .brand{
+        font-size: 1.7em;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .mobile-navbar{
+        display: block;
+    }
+}

@@ -1,0 +1,110 @@
+.main-profile-container{
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+}
+
+.main-profile-container .profile-card{
+    background-color: #11171f;
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--formColor);
+    padding-bottom: 1em;
+    box-shadow: 0.3em 0.4em 0.7em #000000;
+}
+
+.main-profile-container .profile-card .profile-header{
+    background-color: #19212c;
+    padding: 0.6em 1em;
+    font-size: 1.7em;
+}
+
+.main-profile-container .profile-card .pfp-container{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5em;
+    gap: 1.5em;
+}
+
+.main-profile-container .profile-card .pfp-container img{
+    width: 12em;
+    border: 3px solid var(--mainColor);
+    border-radius: 50%;
+}
+
+.main-profile-container .profile-card .pfp-container .user-short-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+.main-profile-container .profile-card .pfp-container .user-short-details .username{
+    font-size: 2.7em;
+    font-weight: 700;
+}
+
+.main-profile-container .profile-card .pfp-container .user-short-details .role{
+    font-style: italic;
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #aaaaaa;
+}
+
+.main-profile-container .profile-card .additional-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0 1.5em 0 2.3em;
+}
+
+.main-profile-container .profile-card .additional-info .info-group{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.main-profile-container .profile-card .additional-info .info-group img{
+    width: 2em;
+}
+
+.main-profile-container .profile-card .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1em;
+    padding: 0 2.3em;
+}
+
+.main-profile-container .profile-card .options button{
+    width: 100%;
+    padding: 0.6em 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 0.23em;
+    border: 2px solid var(--mainColor);
+    font-weight: 700;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.main-profile-container .profile-card .options button:first-of-type{
+    background-color: var(--mainColor);
+    color: var(--formColor);
+}
+
+.main-profile-container .profile-card .options button:first-of-type:hover{
+    transform: translateY(-0.15em);
+    box-shadow: 0 0 0.6em var(--mainColor);
+}
+
+.main-profile-container .profile-card .options button:nth-child(2){
+    background-color: transparent;
+    color: var(--mainColor);
+}
+
+.main-profile-container .profile-card .options button:nth-child(2):hover{
+    transform: rotateZ(-1deg);
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --mainColor: #FF7D29;
+  --secondaryColor: #000000;
+
+  --softOrange: #FFBF78;
+  --lighterOrange: #FFEEA9;
+  --limeYellow: #FEFFD2;
+  --bgColor: #301600;
+
+  --fontFamily: "Nunito", sans-serif;
+  --formColor: #fffffc;
+  --borderColor: #cccccc;
+
+  --errorCharColor: #f1341b;
+  --errorBgColor: #ffd0d0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}
+
+body{
+  background-color: var(--bgColor);
+  min-height: 100vh;
+}
